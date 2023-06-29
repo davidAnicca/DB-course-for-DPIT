@@ -1,0 +1,117 @@
+﻿<!DOCTYPE html>
+
+<html lang="ro">
+<head>
+    <meta charset="utf-8">
+    <title>DB 1</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/h/styles/github-dark.min.css">
+    <script src="/h/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+</head>
+
+<body>
+
+<a href="index.html">&lt;&lt; înapoi</a>
+<hr>
+
+<h2>
+    Ce este o bază de date?
+</h2>
+<p>
+    Bază de date reprezintă o colecție structurată de informații, organizată într-un mod care facilitează stocarea,
+    accesul și gestionarea acestor date. O bază de date poate conține informații referitoare la o gamă largă de
+    subiecte, precum utilizatori, produse, evenimente, rezultate școlare etc.
+
+</p>
+
+
+<h2>
+    La ce se folosește o bază de date?
+</h2>
+
+<p>
+    Gândiți-vă la o bază de date ca la o bibliotecă virtuală sau un depozit electronic unde puteți stoca și organiza
+    diverse tipuri de informații. În loc să căutați prin mulțimea de documente fizice sau digitale pentru a găsi anumite
+    informații, puteți accesa baza de date și căuta în ea cu ajutorul unor interogări.
+</p>
+
+<h2>
+    Cum se folosește o bază de date?
+</h2>
+
+<p>
+    Pentru a crea o bază de date, este nevoie de un sistem de gestiune a bazei de date (sgbd). Noi vom folosi SQLite în
+    următoarele topicuri.
+</p>
+
+<hr>
+
+<h2>
+    Instalare resurse
+</h2>
+
+<ul>
+    <li>
+        <a href="https://www.sqlite.org/index.html">SQLite</a>
+    </li>
+    <li>
+        <a href="https://dbeaver.io/">DBeaver</a>
+    </li>
+</ul>
+
+<h2>SQLite</h2>
+<p>
+    SQLite este o bibliotecă software care vă permite să creați și să utilizați baze de date într-un mod ușor și
+    eficient. Este potrivit pentru aplicații și dispozitive care necesită o soluție de gestionare a bazelor de date
+    portabilă și fără necesitatea unui server separat.
+</p>
+
+<h2>DBeaver</h2>
+<p>
+    DBeaver este un client universal pentru baze de date, care oferă un mediu de lucru integrat pentru gestionarea și
+    interogarea diferitelor tipuri de baze de date. Este un software gratuit și open-source, disponibil pentru diverse
+    sisteme de operare, inclusiv Windows, macOS și Linux.
+</p>
+<p>
+    DBeaver este conceput pentru a oferi o interfață grafică intuitivă și puternică pentru a lucra cu baze de date. Prin
+    intermediul DBeaver, puteți conecta și gestiona diverse tipuri de baze de date, cum ar fi MySQL, PostgreSQL, Oracle,
+    Microsoft SQL Server, SQLite și multe altele.
+</p>
+
+<h2>Testare</h2>
+<ol>
+    <li>creeați un fișier 'identifier.sqlite'</li>
+    <li>deschideți fișierul cu DBeaver</li>
+    <li>rulați codul sql de mai jos întro nouă fereastră de query, care se deshide apăsând butonul sql</li>
+</ol>
+
+<img src="images/dbeaver1.jpg" alt="dbeaver" class="i">
+
+<pre>
+    <code class="hljs language-sql">
+        create table test(
+        id integer
+        )
+    </code>
+</pre>
+
+<p>Această interogare creează o tabelă <em>test</em> care are o singură coloană: <em>id</em>, de tipul int.</p>
+
+<ol start="4">
+    <li>vizualizați diagrama bazei de date, astfel:</li>
+</ol>
+
+<img src="images/veiwDiagram.jpg" alt="dbeaver" class="i">
+
+<p>Click dreapta pe rădăcina bazei date (<em>identifier.sqlite</em>) și view diagram.</p>
+
+<img src="images/diagrama.jpg" alt="diagrama" class="i">
+
+<p>Dacă nu se vede diagrama din prima, un refresh (f5) ar trebui să rezolve problema ușor.</p>
+<p>În diagramă se vede tabela test și atributele (coloanele) acesteia. To be continued...</p>
+
+<hr>
+<a href="index.html">&lt;&lt; înapoi</a>
+
+</body>

@@ -13,7 +13,8 @@ img{
 }
 
 .i {
-    text-align: center;
+    margin: 0 auto;
+    height: 500px;
 }
 
 .i2 {
